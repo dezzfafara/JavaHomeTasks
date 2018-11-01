@@ -27,10 +27,6 @@ public class Massive {
 		}
 	}
 
-	public void printArraySize() {
-		System.out.println(intArray.length);
-	}
-
 	public void initArray() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter size of array:");
