@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ArrayTestSuite" parallel="false">
+	<test name="Test1">
+		<classes>
+			<class name="task_16.InitArrayTests">
+				<methods>
+					<exclude name="testFailTest" />
+				</methods>
+			</class>
+			<class name="task_16.ClearArrayTests" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="task_16.GetArrayTests" />
+			<class name="task_16.GetArrayLengthTests" />
+			<class name="task_16.GetElementByIndexTests" />
+			<class name="task_16.DoesContainTests" />
+			<class name="task_16.ArrayToStringTests" />
+		</classes>
+	</test>
+	<test name="Test3">
+		<classes>
+			<class name="task_16.ShellSortArrayTests" />
+			<class name="task_16.IsAscendingTests" />
+			<class name="task_16.ReverseArrayTests" />
+			<class name="task_16.IntArrayToIntegerArrayTests" />
+		</classes>
+	</test>
+</suite>
