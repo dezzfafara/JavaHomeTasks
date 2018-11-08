@@ -1,0 +1,31 @@
+.//a//span[@class='x-ph__link__text' and text()='Мой Мир']
+
+.//a[@id='PH_projectsMenu_button']//i[@class='x-ph__menu__button__text']
+
+.//a[@data-name='pictures']
+
+.//input[@id='search:submit']
+
+.//label[@for='q' and @class='search__icon']
+
+.//a[@data-d='660379']
+
+.//a[@name='clb3996332']
+
+.//span[@name='clb818633']
+
+.//input[@id='mailbox:login']
+
+.//input[@id='mailbox:saveauth']
+
+.//h3[@class='projects-item__title i-link-deco' and contains(text(), 'ICQ')]/parent::*
+
+.//a[@name='clb571759']
+
+.//div[@class='news-item__link i-block i-relative m-bordered m-animated-shadow m-animated-borderless']
+
+.//div[@class='well notify i-link-no-deco i-absolute m-bordered m-animated-shadow m-animated-borderless']
+
+.//a[@name='clb23480515']/preceding-sibling::*
+
+.//a[@id='footer:feed-switch']
