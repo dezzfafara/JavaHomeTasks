@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ComposeLetterPage {
 	private final static String PART_OF_SEND_URL = "sendmsgok";
 	private final static int POLLING = 300;
-	private final static int DURATION = 300;
+	private final static int DURATION = 10;
 	private FluentWait<WebDriver> fluentWait;
 	private WebDriverWait wait;
 
