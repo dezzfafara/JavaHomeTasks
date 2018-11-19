@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+	<test name="Test">
+		<parameter name="login" value="v.afan.91" />
+		<parameter name="password" value="PVTpvt1" />
+		<parameter name="messageText" value="TEST_GROUP_LETTER TEXT" />
+		<parameter name="recepient1" value="tes1@mail.com" />
+		<parameter name="recepient2" value="tes2@mail.com" />
+		<parameter name="recepient3" value="tes3@mail.com" />
+		<parameter name="subject" value="TEST_GROUP_LETTER" />
+		<classes>
+			<class name="task_20.MailRuTests" />
+		</classes>
+	</test>
+</suite>
