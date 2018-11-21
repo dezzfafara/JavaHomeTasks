@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+	<test name="Test">
+		<parameter name="destination" value="Moscow" />
+		<parameter name="daysFrom" value="3" />
+		<parameter name="daysTill" value="10" />
+		<parameter name="roomsQuantity" value="2" />
+		<parameter name="adultsQuantity" value="3" />
+		<parameter name="childrenQuantity" value="1" />
+		<parameter name="startUrl" value="https://www.booking.com" />
+		<parameter name="scoreToCompareWith" value="9.0" />
+		<classes>
+			<class name="com.booking.BookingTests" />
+		</classes>
+	</test>
+</suite> <!-- mvn clean test -Dsurefire.suiteXmlFiles=src\test\java\suite.xml -->
