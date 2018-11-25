@@ -1,0 +1,71 @@
+1.	Выбрать все записи из таблицы Categories
+SELECT * FROM Categories
+2.	Выбрать Id  и название категорий из таблицы Categories
+SELECT CategoryID, CategoryName FROM Categories
+3.	Выбрать адреса из таблицы Suppliers
+SELECT Address FROM Suppliers
+4.	Отсортировать все продукты по цене в порядке убывания
+SELECT * FROM Products
+order by price desc
+5.	Отсортировать таблицу заказов по CustomerID, а затем по ShipperID в одной запросе
+SELECT * FROM Orders
+order by CustomerID, ShipperID
+6.	Выбрать все продукты, цена которых больше 40 и отсортировать по названию в обратном порядке
+SELECT * FROM Products
+where price > 40
+order by ProductName desc
+7.	Выбрать все продукты, цена которых находится в диапазоне от 20 до 50 и отсортировать по юниту 
+SELECT * FROM Products
+where price between 20 and 50
+order by Unit
+8.	Выбрать все продукты, цена которых находится в диапазоне от 20 до 100 или CategoryID = 6
+SELECT * FROM Products
+where price between 20 and 100 or CategoryID = 6
+9.	Выбрать все продукты, цена которых равна 46, 53, 55 (2-мя способами)
+SELECT * FROM Products
+where price = 46 or price = 53 or price = 55
+
+SELECT * FROM Products
+where price in (46, 53, 55)
+
+10.	 Выбрать все продукты, кроме тех, цена которых равна 46, 53, 55 
+SELECT * FROM Products
+where price not in (46, 53, 55)
+11.	 Выбрать все продукты, в имени которых есть сочетание «han»
+SELECT * FROM Products
+where ProductName like '%han%'
+12.	 Вставить одну полную строку в таблицу Shippers
+INSERT INTO Shippers
+(ShipperID, ShipperName, Phone)
+values
+(4, 'New Package', '(503) 666-7777')
+        
+13.	 Вставить строку с 2-мя указанными значениями в таблицу Shippers
+INSERT INTO Shippers
+(ShipperName, Phone)
+values
+('New Package2', '(503) 666-8888')
+14.	 Вставить значения из таблицы Shippers в таблицу Categories
+INSERT INTO Categories
+(CategoryName, Description)
+select ShipperName, Phone FROM Shippers
+15.	 Вставить значения из таблицы Shippers c именем поставщика «Speedy Express» в таблицу Categories 
+INSERT INTO Categories
+(CategoryName, Description)
+select ShipperName, Phone FROM Shippers where Shippers.ShipperName = 'Speedy Express'
+16.	 Удалить из таблицы Shippers доставщика с именем 	«Speedy Express»
+DELETE FROM [Shippers]
+where ShipperName = 'Speedy Express'
+17.	 Удалить продукты, цена которых меньше 50
+DELETE FROM [Products]
+where price < 50
+18.	 Удалить все заказы
+DELETE FROM [Orders]
+19.	  Изменить описании категории продукта с названием категории = «Beverages» на любое другое
+UPDATE [Categories]
+set Description = 'New Description'
+where CategoryName = 'Beverages'
+20.	 Изменить цену продукта с именем Chais на любую другую
+UPDATE [Products]
+set price = 666
+where ProductName = 'Chais'
