@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+	<test name="Test">
+		<parameter name="connectionUrl"
+			value="jdbc:mysql://localhost:3306/dbbooking?useSSL=false&amp;serverTimezone=UTC" />
+		<parameter name="login" value="root" />
+		<parameter name="password" value="root" />
+		<parameter name="sqlQuery"
+			value="SELECT dbbooking.trip.Destination, dbbooking.trip_date.DaysFrom,
+			 dbbooking.trip_date.DaysTill, dbbooking.trip_parameters.Rooms,
+			 dbbooking.trip_parameters.Adults, dbbooking.trip_parameters.Children FROM dbbooking.trip
+			 JOIN dbbooking.trip_date ON dbbooking.trip.Id = dbbooking.trip_date.TripId 
+			 JOIN dbbooking.trip_parameters ON dbbooking.trip_parameters.TripId = dbbooking.trip.Id" />
+		<parameter name="startUrl" value="https://www.booking.com" />
+		<parameter name="scoreToCompareWith" value="9.0" />
+		<classes>
+			<class name="com.booking.BookingTests" />
+		</classes>
+	</test>
+</suite> <!-- mvn clean test -Dsurefire.suiteXmlFiles=src\test\java\suite.xml -->
