@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection>
+	<parameters>
+		<url><![CDATA[jdbc:mysql://localhost:3306/dbbooking?useSSL=false&serverTimezone=UTC]]></url>
+		<login>root</login>
+		<password>root</password>
+		<query><![CDATA[SELECT dbbooking.trip.Destination,
+			dbbooking.trip_date.DaysFrom, dbbooking.trip_date.DaysTill,
+			dbbooking.trip_parameters.Rooms, dbbooking.trip_parameters.Adults,
+			dbbooking.trip_parameters.Children FROM dbbooking.trip JOIN
+			dbbooking.trip_date ON dbbooking.trip.Id =dbbooking.trip_date.TripId
+			JOIN dbbooking.trip_parameters ON dbbooking.trip_parameters.TripId =
+			dbbooking.trip.Id]]>
+		</query>
+	</parameters>
+</connection>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refs>
+	<countries>
+		<country id="1">
+			<code>RUS</code>
+			<name>Russia</name>
+			<description>Russian Federation</description>
+		</country>
+		<country id="2">
+			<code>UK</code>
+			<name>United Kingdom</name>
+			<description>United Kingdom of Great Britain and Northern Ireland
+			</description>
+		</country>
+	</countries>
+</refs>
