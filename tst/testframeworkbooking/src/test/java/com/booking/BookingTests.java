@@ -47,7 +47,7 @@ public class BookingTests {
 	@BeforeTest
 	public void setUp()
 			throws SQLException, XMLStreamException, SAXException, IOException, ParserConfigurationException {
-		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
+		driverManager = DriverManagerFactory.getManager(DriverType.FIREFOX);
 		driver = driverManager.getDriver();
 		homePage = new HomePage(driver);
 		searchResultsPage = new SearchResultsPage(driver);
