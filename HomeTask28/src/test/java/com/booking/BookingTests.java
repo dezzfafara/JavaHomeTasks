@@ -52,7 +52,7 @@ public class BookingTests {
 		searchResultsPage = new SearchResultsPage(driver);
 		currentHotelPage = new CurrentHotelPage(driver);
 		dbConnector = new DBConnector();
-		pageHelper = new PageHelper();
+		pageHelper = PageHelper.getPageHelperInstance();
 		parsersRunner = new ParsersRunner();
 		connectionParameters = parsersRunner.initDOMParser().get(0);
 		// connectionParameters = parsersRunner.initSAXParser().get(0);
