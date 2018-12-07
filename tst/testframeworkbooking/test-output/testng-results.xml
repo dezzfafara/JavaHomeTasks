@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30684" started-at="2018-12-06T22:17:13Z" finished-at="2018-12-06T22:17:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30684" started-at="2018-12-06T22:17:13Z" finished-at="2018-12-06T22:17:44Z">
+      <class name="com.booking.BookingTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.BookingTests@65e61854]" name="setUp" is-config="true" duration-ms="5940" started-at="2018-12-06T22:17:13Z" finished-at="2018-12-06T22:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goToMainPage(java.lang.String)[pri:0, instance:com.booking.BookingTests@65e61854]" name="goToMainPage" is-config="true" duration-ms="1919" started-at="2018-12-06T22:17:19Z" finished-at="2018-12-06T22:17:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.booking.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method status="PASS" signature="testBookingCase1()[pri:0, instance:com.booking.BookingTests@65e61854]" name="testBookingCase1" duration-ms="7757" started-at="2018-12-06T22:17:21Z" finished-at="2018-12-06T22:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookingCase1 -->
+        <test-method status="PASS" signature="closeTabs()[pri:0, instance:com.booking.BookingTests@65e61854]" name="closeTabs" is-config="true" duration-ms="13" started-at="2018-12-06T22:17:29Z" finished-at="2018-12-06T22:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTabs -->
+        <test-method status="PASS" signature="goToMainPage(java.lang.String)[pri:0, instance:com.booking.BookingTests@65e61854]" name="goToMainPage" is-config="true" duration-ms="1596" started-at="2018-12-06T22:17:29Z" finished-at="2018-12-06T22:17:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.booking.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMainPage -->
+        <test-method status="PASS" signature="testBookingCase2(double)[pri:0, instance:com.booking.BookingTests@65e61854]" name="testBookingCase2" duration-ms="12016" started-at="2018-12-06T22:17:31Z" finished-at="2018-12-06T22:17:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookingCase2 -->
+        <test-method status="PASS" signature="closeTabs()[pri:0, instance:com.booking.BookingTests@65e61854]" name="closeTabs" is-config="true" duration-ms="62" started-at="2018-12-06T22:17:43Z" finished-at="2018-12-06T22:17:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTabs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.BookingTests@65e61854]" name="tearDown" is-config="true" duration-ms="1154" started-at="2018-12-06T22:17:43Z" finished-at="2018-12-06T22:17:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.booking.BookingTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

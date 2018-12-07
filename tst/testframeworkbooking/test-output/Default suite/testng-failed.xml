@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="startUrl" value="https://www.booking.com"/>
+  <parameter name="scoreToCompareWith" value="9.0"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.booking.BookingTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="closeTabs"/>
+          <include name="goToMainPage"/>
+          <include name="setUp"/>
+          <include name="testBookingCase2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.booking.BookingTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

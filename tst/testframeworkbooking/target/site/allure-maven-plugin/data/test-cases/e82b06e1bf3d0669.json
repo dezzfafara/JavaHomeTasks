@@ -1,0 +1,114 @@
+{
+  "uid" : "e82b06e1bf3d0669",
+  "name" : "testBookingCase2",
+  "fullName" : "com.booking.BookingTests.testBookingCase2",
+  "historyId" : "c0d7fffb0d606a15094c52d5995344e3",
+  "time" : {
+    "start" : 1544123136091,
+    "stop" : 1544123148426,
+    "duration" : 12335
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "goToMainPage",
+    "time" : {
+      "start" : 1544123134788,
+      "stop" : 1544123136082,
+      "duration" : 1294
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1544123122118,
+      "stop" : 1544123125741,
+      "duration" : 3623
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1544123148489,
+      "stop" : 1544123149530,
+      "duration" : 1041
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  }, {
+    "name" : "closeTabs",
+    "time" : {
+      "start" : 1544123148433,
+      "stop" : 1544123148481,
+      "duration" : 48
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.booking.BookingTests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.booking.BookingTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testBookingCase2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.booking.BookingTests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QQ1T9UV"
+  }, {
+    "name" : "thread",
+    "value" : "13276@DESKTOP-QQ1T9UV.main(1)"
+  } ],
+  "parameters" : [ {
+    "name" : "scoreToCompareWith",
+    "value" : "9.0"
+  }, {
+    "name" : "startUrl",
+    "value" : "https://www.booking.com"
+  }, {
+    "name" : "arg0",
+    "value" : "9.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

@@ -1,0 +1,21 @@
+[ {
+  "uid" : "e82b06e1bf3d0669",
+  "name" : "testBookingCase2",
+  "time" : {
+    "start" : 1544123136091,
+    "stop" : 1544123148426,
+    "duration" : 12335
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99a966ac5fc0d7bc",
+  "name" : "testBookingCase1",
+  "time" : {
+    "start" : 1544123127975,
+    "stop" : 1544123134754,
+    "duration" : 6779
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

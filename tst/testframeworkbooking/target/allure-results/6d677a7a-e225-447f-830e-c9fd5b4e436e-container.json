@@ -1,0 +1,1 @@
+{"uuid":"6d677a7a-e225-447f-830e-c9fd5b4e436e","name":"com.booking.BookingTests.closeTabs","description":"","start":1544123134771,"stop":1544123134782,"children":["647b1c20-cfc0-4eca-bc2f-c1445dd170db"],"afters":[{"name":"closeTabs","status":"passed","stage":"finished","description":"","start":1544123134771,"stop":1544123134782}]}

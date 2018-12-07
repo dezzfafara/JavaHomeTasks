@@ -1,0 +1,62 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  },
+  "time" : {
+    "minDuration" : 6779,
+    "maxDuration" : 12335,
+    "sumDuration" : 19114,
+    "start" : 1544123127975,
+    "stop" : 1544123148426,
+    "duration" : 20451
+  },
+  "children" : [ {
+    "uid" : "2076ccf6a2bdf5e9",
+    "name" : "com.booking.BookingTests",
+    "time" : {
+      "minDuration" : 6779,
+      "maxDuration" : 12335,
+      "sumDuration" : 19114,
+      "start" : 1544123127975,
+      "stop" : 1544123148426,
+      "duration" : 20451
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "e82b06e1bf3d0669",
+      "name" : "testBookingCase2",
+      "time" : {
+        "start" : 1544123136091,
+        "stop" : 1544123148426,
+        "duration" : 12335
+      },
+      "status" : "passed",
+      "flaky" : false,
+      "type" : "TestCaseNode"
+    }, {
+      "uid" : "99a966ac5fc0d7bc",
+      "name" : "testBookingCase1",
+      "time" : {
+        "start" : 1544123127975,
+        "stop" : 1544123134754,
+        "duration" : 6779
+      },
+      "status" : "passed",
+      "flaky" : false,
+      "type" : "TestCaseNode"
+    } ]
+  } ]
+}
