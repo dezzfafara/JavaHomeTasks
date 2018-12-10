@@ -60,7 +60,7 @@ public final class InboxPage extends Page {
 	@FindBy(xpath = ".//span[@class='b-dropdown__ctrl__text' and text()='Переместить']")
 	private WebElement moveTo;
 
-	@FindBy(xpath = ".//span[@class='b-dropdown__list__item__text' and text()='Входящие']")
+	@FindBy(xpath = ".//a[@data-name='0']/span[@class='b-dropdown__list__item__text']")
 	private WebElement toInbox;
 
 	@FindBy(xpath = ".//div[@class='notify']")
