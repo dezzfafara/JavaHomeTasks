@@ -57,7 +57,7 @@ public final class InboxPage extends Page {
 	@FindBy(xpath = ".//a[@href='/messages/trash/']")
 	private WebElement binFolder;
 
-	@FindBy(xpath = ".//span[@class='b-dropdown__ctrl__text' and text()='Переместить']")
+	@FindBy(xpath = ".//div[@data-cache-key='500002_undefined_false']//div[contains(@title,'Переместить')]")
 	private WebElement moveTo;
 
 	@FindBy(xpath = ".//a[@data-name='0']/span[@class='b-dropdown__list__item__text']")
@@ -121,7 +121,8 @@ public final class InboxPage extends Page {
 		binFolder.click();
 		wait.until(ExpectedConditions.invisibilityOfAllElements(notifications));
 		wait.until(ExpectedConditions.visibilityOf(selection)).click();
-		new Robot().keyPress(KeyEvent.VK_V);
+		// new Robot().keyPress(KeyEvent.VK_V);
+		wait.until(ExpectedConditions.visibilityOf(moveTo)).click();
 		toInbox.click();
 	}
 
