@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Final Project Suite" parallel="false">
+	<test name="mail.ru tests">
+		<classes>
+			<class name="ru.mail.TestRunner" />
+		</classes>
+	</test>
+	<test name="API VK test">
+		<parameter name="sendMessagePath" value="messages.send?" />
+		<parameter name="getByIdPath" value="messages.getById?" />
+		<parameter name="editMessagePath" value="messages.edit?" />
+		<parameter name="userId" value="user_id" />
+		<parameter name="userIdValue" value="17717703" />
+		<parameter name="message" value="message" />
+		<parameter name="messageValue" value="Test message " />
+		<parameter name="accessToken" value="access_token" />
+		<parameter name="accessTokenValue"
+			value="5d526747754dbf1702a264a45dee5cf64c63f92ab8efb03475329e82d9895c18e170798f75eea33390ee2" />
+		<parameter name="version" value="version" />
+		<parameter name="versionValue" value="5.92" />
+		<parameter name="peerId" value="peer_id" />
+		<parameter name="messageId" value="message_id" />
+		<parameter name="messageIds" value="message_ids" />
+		<parameter name="peerId" value="peer_id" />
+		<parameter name="editedMessage" value=" EDITED!" />
+		<parameter name="deleteForAll" value="delete_for_all" />
+		<parameter name="deleteForAllValue" value="1" />
+		<parameter name="attachment" value="attachment" />
+		<parameter name="attachmentValue"
+			value="photo17717703_456239330" />
+		<parameter name="randomId" value="random_id" />
+		<parameter name="deleteMessagePath" value="messages.delete?" />
+		<classes>
+			<class name="ru.mail.ApiTests" />
+		</classes>
+	</test>
+</suite> 
