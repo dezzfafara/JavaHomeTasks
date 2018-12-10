@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection>
+	<parameters>
+		<url><![CDATA[jdbc:mysql://localhost:3306/rumail?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]]></url>
+		<login>root</login>
+		<password>root</password>
+		<query><![CDATA[SELECT data.login, data.password, data.domain FROM rumail.data WHERE data.id = 1]]>
+		</query>
+	</parameters>
+</connection>
