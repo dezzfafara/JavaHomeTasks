@@ -1,0 +1,940 @@
+Started by user AFAN
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\PVT Final Project
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/dezzfafara/JavaHomeTasks.git # timeout=10
+Fetching upstream changes from https://github.com/dezzfafara/JavaHomeTasks.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/dezzfafara/JavaHomeTasks.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision d25b134456a7e57fb68b5260f9b7b10d061de0e3 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d25b134456a7e57fb68b5260f9b7b10d061de0e3
+Commit message: "Fixed xpath"
+ > git.exe rev-list --no-walk 830ab7bf7bc26162c13bbaee659db4b33b22b622 # timeout=10
+[PVT Final Project] $ cmd /c call C:\WINDOWS\TEMP\jenkins6589562437537418396.bat
+
+C:\Program Files (x86)\Jenkins\workspace\PVT Final Project>CD C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject 
+
+C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject>mvn clean install -Dsurefire.suiteXmlFiles=src\test\java\suite.xml 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for ru.mail:pvtfinal:jar:1.0-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 139, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------------< ru.mail:pvtfinal >--------------------------
+[INFO] Building pvtfinal 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ pvtfinal ---
+[INFO] Deleting C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ pvtfinal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ pvtfinal ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ pvtfinal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ pvtfinal ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ pvtfinal ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+дек 11, 2018 1:19:14 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 42597
+Only local connections are allowed.
+дек 11, 2018 1:19:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:16 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:19:22 INFO  AuthTests:customLogger::33 - Successfull login...
+2018-12-11 01:19:24 INFO  AuthTests:customLogger::33 - Successfull logout...
+дек 11, 2018 1:19:26 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 10401
+Only local connections are allowed.
+дек 11, 2018 1:19:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:28 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:19:28 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 22118
+Only local connections are allowed.
+дек 11, 2018 1:19:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:30 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:19:31 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 33820
+Only local connections are allowed.
+дек 11, 2018 1:19:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:33 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:19:41 INFO  InboxTests:customLogger::33 - Email is sent...
+дек 11, 2018 1:19:41 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 37140
+Only local connections are allowed.
+дек 11, 2018 1:19:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:43 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:19:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 14776
+Only local connections are allowed.
+дек 11, 2018 1:19:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:47 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:19:47 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 40034
+Only local connections are allowed.
+дек 11, 2018 1:19:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:19:49 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:19:58 INFO  InboxTests:customLogger::33 - All letters are removed...
+2018-12-11 01:20:03 INFO  InboxTests:customLogger::33 - All letters are moved to inbox...
+дек 11, 2018 1:20:05 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 2711
+Only local connections are allowed.
+дек 11, 2018 1:20:07 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:07 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:09 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 33068
+Only local connections are allowed.
+дек 11, 2018 1:20:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:11 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:11 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 44603
+Only local connections are allowed.
+дек 11, 2018 1:20:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:13 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:20:24 INFO  InboxTests:customLogger::33 - Folder is added...
+дек 11, 2018 1:20:25 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 20202
+Only local connections are allowed.
+дек 11, 2018 1:20:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:27 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:30 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 15807
+Only local connections are allowed.
+дек 11, 2018 1:20:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:32 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:32 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 32088
+Only local connections are allowed.
+дек 11, 2018 1:20:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:34 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:20:40 INFO  InboxTests:customLogger::33 - All letters are marked...
+дек 11, 2018 1:20:41 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 15927
+Only local connections are allowed.
+дек 11, 2018 1:20:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:43 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 16802
+Only local connections are allowed.
+дек 11, 2018 1:20:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:47 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:20:47 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 45903
+Only local connections are allowed.
+дек 11, 2018 1:20:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:20:49 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:20:58 INFO  InboxTests:customLogger::33 - Letters are sorted ascending...
+дек 11, 2018 1:21:00 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 28487
+Only local connections are allowed.
+дек 11, 2018 1:21:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:02 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:04 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 22857
+Only local connections are allowed.
+дек 11, 2018 1:21:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:06 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:07 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 23795
+Only local connections are allowed.
+дек 11, 2018 1:21:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:08 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:21:12 INFO  UnauthorizedTests:customLogger::33 - Search is successfull...
+дек 11, 2018 1:21:12 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 49074
+Only local connections are allowed.
+дек 11, 2018 1:21:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:14 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:14 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 43430
+Only local connections are allowed.
+дек 11, 2018 1:21:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:16 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:19 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 16290
+Only local connections are allowed.
+дек 11, 2018 1:21:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:21 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:21:24 INFO  UnauthorizedTests:customLogger::33 - Feed is present...
+2018-12-11 01:21:25 INFO  UnauthorizedTests:customLogger::33 - Feed is NOT present...
+дек 11, 2018 1:21:25 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 27391
+Only local connections are allowed.
+дек 11, 2018 1:21:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:27 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:27 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 19235
+Only local connections are allowed.
+дек 11, 2018 1:21:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:29 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:31 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 42803
+Only local connections are allowed.
+дек 11, 2018 1:21:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:33 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+2018-12-11 01:21:37 INFO  UnauthorizedTests:customLogger::33 - Weather is present...
+дек 11, 2018 1:21:38 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 4381
+Only local connections are allowed.
+дек 11, 2018 1:21:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:40 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+дек 11, 2018 1:21:40 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 42023
+Only local connections are allowed.
+дек 11, 2018 1:21:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+дек 11, 2018 1:21:42 AM org.openqa.selenium.remote.Augmenter extractRemoteWebDriver
+WARNING: Augmenter should be applied to the instances of @Augmentable classes or previously augmented instances only (instance class was: class org.openqa.selenium.chrome.ChromeDriver)
+
+9 Scenarios (9 passed)
+38 Steps (38 passed)
+2m31,159s
+
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 153.042 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ pvtfinal ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.pom
+Progress (1): 2.2/4.3 kB
+Progress (1): 4.3 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.pom (4.3 kB at 13 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom
+Progress (1): 2.2/4.6 kB
+Progress (1): 4.6 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.pom (4.6 kB at 62 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.3/plexus-archiver-3.3.pom
+Progress (1): 2.2/5.3 kB
+Progress (1): 5.0/5.3 kB
+Progress (1): 5.3 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.3/plexus-archiver-3.3.pom (5.3 kB at 75 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+Progress (1): 2.2/19 kB
+Progress (1): 5.0/19 kB
+Progress (1): 7.8/19 kB
+Progress (1): 11/19 kB 
+Progress (1): 13/19 kB
+Progress (1): 16/19 kB
+Progress (1): 19/19 kB
+Progress (1): 19 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (19 kB at 199 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.pom
+Progress (1): 2.2/4.9 kB
+Progress (1): 4.9 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.pom (4.9 kB at 66 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+Progress (1): 2.2/11 kB
+Progress (1): 5.0/11 kB
+Progress (1): 7.7/11 kB
+Progress (1): 11/11 kB 
+Progress (1): 11 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom (11 kB at 141 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+Progress (1): 2.2/47 kB
+Progress (1): 5.0/47 kB
+Progress (1): 7.8/47 kB
+Progress (1): 11/47 kB 
+Progress (1): 13/47 kB
+Progress (1): 16/47 kB
+Progress (1): 19/47 kB
+Progress (1): 21/47 kB
+Progress (1): 24/47 kB
+Progress (1): 27/47 kB
+Progress (1): 30/47 kB
+Progress (1): 32/47 kB
+Progress (1): 36/47 kB
+Progress (1): 40/47 kB
+Progress (1): 45/47 kB
+Progress (1): 47 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom (47 kB at 442 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom
+Progress (1): 4.1/13 kB
+Progress (1): 7.7/13 kB
+Progress (1): 12/13 kB 
+Progress (1): 13 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom (13 kB at 167 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom
+Progress (1): 4.1/15 kB
+Progress (1): 7.7/15 kB
+Progress (1): 12/15 kB 
+Progress (1): 15 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom (15 kB at 194 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom
+Progress (1): 1.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom (1.9 kB at 29 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.pom
+Progress (1): 2.2/5.3 kB
+Progress (1): 5.0/5.3 kB
+Progress (1): 5.3 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.pom (5.3 kB at 73 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar
+Progress (1): 2.2/24 kB
+Progress (1): 5.0/24 kB
+Progress (1): 7.7/24 kB
+Progress (1): 10/24 kB 
+Progress (1): 13/24 kB
+Progress (1): 16/24 kB
+Progress (1): 19/24 kB
+Progress (1): 21/24 kB
+Progress (1): 24 kB   
+Progress (2): 24 kB | 2.8/154 kB
+Progress (3): 24 kB | 2.8/154 kB | 2.8/187 kB
+Progress (3): 24 kB | 5.5/154 kB | 2.8/187 kB
+Progress (3): 24 kB | 5.5/154 kB | 5.5/187 kB
+Progress (3): 24 kB | 8.3/154 kB | 5.5/187 kB
+Progress (3): 24 kB | 8.3/154 kB | 8.3/187 kB
+Progress (3): 24 kB | 11/154 kB | 8.3/187 kB 
+Progress (4): 24 kB | 11/154 kB | 8.3/187 kB | 2.2/86 kB
+Progress (5): 24 kB | 11/154 kB | 8.3/187 kB | 2.2/86 kB | 2.8/426 kB
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 2.2/86 kB | 2.8/426 kB 
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 5.0/86 kB | 2.8/426 kB
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 5.0/86 kB | 5.5/426 kB
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 7.7/86 kB | 5.5/426 kB
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 7.7/86 kB | 8.3/426 kB
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 10/86 kB | 8.3/426 kB 
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 10/86 kB | 11/426 kB 
+Progress (5): 24 kB | 11/154 kB | 11/187 kB | 13/86 kB | 11/426 kB
+Progress (5): 24 kB | 11/154 kB | 14/187 kB | 13/86 kB | 11/426 kB
+Progress (5): 24 kB | 14/154 kB | 14/187 kB | 13/86 kB | 11/426 kB
+Progress (5): 24 kB | 14/154 kB | 16/187 kB | 13/86 kB | 11/426 kB
+Progress (5): 24 kB | 16/154 kB | 16/187 kB | 13/86 kB | 11/426 kB
+Progress (5): 24 kB | 16/154 kB | 16/187 kB | 16/86 kB | 11/426 kB
+Progress (5): 24 kB | 16/154 kB | 16/187 kB | 16/86 kB | 14/426 kB
+Progress (5): 24 kB | 16/154 kB | 16/187 kB | 19/86 kB | 14/426 kB
+Progress (5): 24 kB | 16/154 kB | 19/187 kB | 19/86 kB | 14/426 kB
+Progress (5): 24 kB | 19/154 kB | 19/187 kB | 19/86 kB | 14/426 kB
+Progress (5): 24 kB | 19/154 kB | 22/187 kB | 19/86 kB | 14/426 kB
+Progress (5): 24 kB | 19/154 kB | 22/187 kB | 21/86 kB | 14/426 kB
+Progress (5): 24 kB | 19/154 kB | 22/187 kB | 21/86 kB | 16/426 kB
+Progress (5): 24 kB | 19/154 kB | 22/187 kB | 24/86 kB | 16/426 kB
+Progress (5): 24 kB | 19/154 kB | 25/187 kB | 24/86 kB | 16/426 kB
+Progress (5): 24 kB | 22/154 kB | 25/187 kB | 24/86 kB | 16/426 kB
+Progress (5): 24 kB | 22/154 kB | 27/187 kB | 24/86 kB | 16/426 kB
+Progress (5): 24 kB | 22/154 kB | 27/187 kB | 24/86 kB | 19/426 kB
+Progress (5): 24 kB | 22/154 kB | 30/187 kB | 24/86 kB | 19/426 kB
+Progress (5): 24 kB | 22/154 kB | 30/187 kB | 27/86 kB | 19/426 kB
+Progress (5): 24 kB | 25/154 kB | 30/187 kB | 27/86 kB | 19/426 kB
+Progress (5): 24 kB | 25/154 kB | 30/187 kB | 30/86 kB | 19/426 kB
+Progress (5): 24 kB | 25/154 kB | 33/187 kB | 30/86 kB | 19/426 kB
+Progress (5): 24 kB | 25/154 kB | 33/187 kB | 30/86 kB | 22/426 kB
+Progress (5): 24 kB | 27/154 kB | 33/187 kB | 30/86 kB | 22/426 kB
+Progress (5): 24 kB | 27/154 kB | 33/187 kB | 30/86 kB | 25/426 kB
+Progress (5): 24 kB | 27/154 kB | 33/187 kB | 32/86 kB | 25/426 kB
+Progress (5): 24 kB | 27/154 kB | 33/187 kB | 32/86 kB | 27/426 kB
+Progress (5): 24 kB | 30/154 kB | 33/187 kB | 32/86 kB | 27/426 kB
+Progress (5): 24 kB | 30/154 kB | 33/187 kB | 32/86 kB | 30/426 kB
+Progress (5): 24 kB | 33/154 kB | 33/187 kB | 32/86 kB | 30/426 kB
+Progress (5): 24 kB | 33/154 kB | 33/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 37/154 kB | 33/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 37/154 kB | 37/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 41/154 kB | 37/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 41/154 kB | 41/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 45/154 kB | 41/187 kB | 32/86 kB | 33/426 kB
+Progress (5): 24 kB | 45/154 kB | 41/187 kB | 36/86 kB | 33/426 kB
+Progress (5): 24 kB | 45/154 kB | 45/187 kB | 36/86 kB | 33/426 kB
+Progress (5): 24 kB | 45/154 kB | 45/187 kB | 40/86 kB | 33/426 kB
+Progress (5): 24 kB | 49/154 kB | 45/187 kB | 40/86 kB | 33/426 kB
+Progress (5): 24 kB | 49/154 kB | 45/187 kB | 45/86 kB | 33/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 45/86 kB | 33/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 49/86 kB | 33/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 49/86 kB | 37/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 49/86 kB | 41/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 49/86 kB | 45/426 kB
+Progress (5): 24 kB | 49/154 kB | 49/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 49/154 kB | 53/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 53/154 kB | 53/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 53/154 kB | 57/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 57/154 kB | 57/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 57/154 kB | 61/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 61/154 kB | 61/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 61/154 kB | 66/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 49/86 kB | 49/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 53/86 kB | 49/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 57/86 kB | 49/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 61/86 kB | 49/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 61/86 kB | 53/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 65/86 kB | 53/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 65/86 kB | 57/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 65/86 kB | 61/426 kB
+Progress (5): 24 kB | 64/154 kB | 66/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 64/154 kB | 70/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 64/154 kB | 74/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 64/154 kB | 78/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 64/154 kB | 82/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 68/154 kB | 82/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 72/154 kB | 82/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 77/154 kB | 82/187 kB | 65/86 kB | 64/426 kB
+Progress (5): 24 kB | 77/154 kB | 82/187 kB | 69/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 69/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 73/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 77/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 81/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 85/86 kB | 64/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 85/86 kB | 68/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 68/426 kB   
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 72/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 76/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 80/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 84/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 88/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 92/426 kB
+Progress (5): 24 kB | 81/154 kB | 82/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 85/154 kB | 82/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 89/154 kB | 82/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 93/154 kB | 82/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 82/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 86/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 90/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 94/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 98/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 102/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 106/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 111/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 97/154 kB | 115/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 101/154 kB | 115/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 105/154 kB | 115/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 109/154 kB | 115/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 113/154 kB | 115/187 kB | 86 kB | 96/426 kB
+Progress (5): 24 kB | 113/154 kB | 115/187 kB | 86 kB | 100/426 kB
+Progress (5): 24 kB | 113/154 kB | 115/187 kB | 86 kB | 105/426 kB
+Progress (5): 24 kB | 113/154 kB | 115/187 kB | 86 kB | 109/426 kB
+Progress (5): 24 kB | 113/154 kB | 115/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 113/154 kB | 119/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 118/154 kB | 119/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 118/154 kB | 123/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 122/154 kB | 123/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 122/154 kB | 127/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 126/154 kB | 127/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 126/154 kB | 131/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 130/154 kB | 131/187 kB | 86 kB | 113/426 kB
+Progress (5): 24 kB | 130/154 kB | 131/187 kB | 86 kB | 117/426 kB
+Progress (5): 24 kB | 130/154 kB | 131/187 kB | 86 kB | 121/426 kB
+Progress (5): 24 kB | 130/154 kB | 131/187 kB | 86 kB | 125/426 kB
+Progress (5): 24 kB | 130/154 kB | 131/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 134/154 kB | 131/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 138/154 kB | 131/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 142/154 kB | 131/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 131/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 135/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 139/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 143/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 147/187 kB | 86 kB | 129/426 kB
+Progress (5): 24 kB | 146/154 kB | 147/187 kB | 86 kB | 133/426 kB
+Progress (5): 24 kB | 146/154 kB | 147/187 kB | 86 kB | 137/426 kB
+Progress (5): 24 kB | 146/154 kB | 147/187 kB | 86 kB | 141/426 kB
+Progress (5): 24 kB | 146/154 kB | 147/187 kB | 86 kB | 146/426 kB
+                                                                  
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.jar (24 kB at 127 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar
+Progress (4): 150/154 kB | 147/187 kB | 86 kB | 146/426 kB
+Progress (4): 154/154 kB | 147/187 kB | 86 kB | 146/426 kB
+Progress (4): 154 kB | 147/187 kB | 86 kB | 146/426 kB    
+Progress (4): 154 kB | 152/187 kB | 86 kB | 146/426 kB
+Progress (4): 154 kB | 156/187 kB | 86 kB | 146/426 kB
+Progress (4): 154 kB | 160/187 kB | 86 kB | 146/426 kB
+Progress (4): 154 kB | 164/187 kB | 86 kB | 146/426 kB
+Progress (4): 154 kB | 164/187 kB | 86 kB | 150/426 kB
+Progress (4): 154 kB | 164/187 kB | 86 kB | 154/426 kB
+Progress (4): 154 kB | 164/187 kB | 86 kB | 158/426 kB
+Progress (4): 154 kB | 164/187 kB | 86 kB | 162/426 kB
+Progress (4): 154 kB | 168/187 kB | 86 kB | 162/426 kB
+Progress (4): 154 kB | 172/187 kB | 86 kB | 162/426 kB
+Progress (4): 154 kB | 176/187 kB | 86 kB | 162/426 kB
+Progress (4): 154 kB | 180/187 kB | 86 kB | 162/426 kB
+                                                      
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.jar (86 kB at 429 kB/s)
+Progress (3): 154 kB | 180/187 kB | 166/426 kB
+                                              
+Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar
+Progress (3): 154 kB | 180/187 kB | 170/426 kB
+Progress (3): 154 kB | 180/187 kB | 174/426 kB
+Progress (3): 154 kB | 184/187 kB | 174/426 kB
+Progress (3): 154 kB | 184/187 kB | 178/426 kB
+Progress (3): 154 kB | 187 kB | 178/426 kB    
+Progress (3): 154 kB | 187 kB | 182/426 kB
+Progress (3): 154 kB | 187 kB | 187/426 kB
+Progress (3): 154 kB | 187 kB | 191/426 kB
+Progress (3): 154 kB | 187 kB | 195/426 kB
+Progress (4): 154 kB | 187 kB | 195/426 kB | 2.2/58 kB
+Progress (4): 154 kB | 187 kB | 195/426 kB | 5.0/58 kB
+Progress (4): 154 kB | 187 kB | 195/426 kB | 7.7/58 kB
+Progress (4): 154 kB | 187 kB | 199/426 kB | 7.7/58 kB
+Progress (4): 154 kB | 187 kB | 203/426 kB | 7.7/58 kB
+Progress (4): 154 kB | 187 kB | 207/426 kB | 7.7/58 kB
+Progress (4): 154 kB | 187 kB | 207/426 kB | 10/58 kB 
+Progress (4): 154 kB | 187 kB | 211/426 kB | 10/58 kB
+Progress (4): 154 kB | 187 kB | 211/426 kB | 13/58 kB
+Progress (4): 154 kB | 187 kB | 211/426 kB | 16/58 kB
+Progress (4): 154 kB | 187 kB | 215/426 kB | 16/58 kB
+Progress (4): 154 kB | 187 kB | 219/426 kB | 16/58 kB
+Progress (4): 154 kB | 187 kB | 223/426 kB | 16/58 kB
+Progress (4): 154 kB | 187 kB | 223/426 kB | 19/58 kB
+Progress (4): 154 kB | 187 kB | 227/426 kB | 19/58 kB
+Progress (4): 154 kB | 187 kB | 227/426 kB | 21/58 kB
+Progress (4): 154 kB | 187 kB | 227/426 kB | 24/58 kB
+Progress (4): 154 kB | 187 kB | 227/426 kB | 27/58 kB
+Progress (4): 154 kB | 187 kB | 227/426 kB | 30/58 kB
+Progress (4): 154 kB | 187 kB | 232/426 kB | 30/58 kB
+Progress (4): 154 kB | 187 kB | 236/426 kB | 30/58 kB
+Progress (4): 154 kB | 187 kB | 240/426 kB | 30/58 kB
+Progress (4): 154 kB | 187 kB | 244/426 kB | 30/58 kB
+Progress (4): 154 kB | 187 kB | 244/426 kB | 32/58 kB
+                                                     
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar (154 kB at 669 kB/s)
+Progress (3): 187 kB | 248/426 kB | 32/58 kB
+Progress (3): 187 kB | 252/426 kB | 32/58 kB
+Progress (3): 187 kB | 256/426 kB | 32/58 kB
+Progress (3): 187 kB | 260/426 kB | 32/58 kB
+Progress (4): 187 kB | 260/426 kB | 32/58 kB | 4.1/100 kB
+Progress (4): 187 kB | 260/426 kB | 32/58 kB | 8.2/100 kB
+Progress (4): 187 kB | 260/426 kB | 32/58 kB | 12/100 kB 
+Progress (4): 187 kB | 260/426 kB | 32/58 kB | 16/100 kB
+Progress (4): 187 kB | 260/426 kB | 36/58 kB | 16/100 kB
+Progress (4): 187 kB | 260/426 kB | 40/58 kB | 16/100 kB
+Progress (4): 187 kB | 260/426 kB | 45/58 kB | 16/100 kB
+Progress (4): 187 kB | 260/426 kB | 49/58 kB | 16/100 kB
+Progress (4): 187 kB | 260/426 kB | 49/58 kB | 20/100 kB
+Progress (4): 187 kB | 260/426 kB | 49/58 kB | 25/100 kB
+Progress (4): 187 kB | 260/426 kB | 49/58 kB | 29/100 kB
+Progress (4): 187 kB | 260/426 kB | 49/58 kB | 33/100 kB
+Progress (4): 187 kB | 260/426 kB | 53/58 kB | 33/100 kB
+Progress (4): 187 kB | 260/426 kB | 57/58 kB | 33/100 kB
+Progress (4): 187 kB | 264/426 kB | 57/58 kB | 33/100 kB
+Progress (4): 187 kB | 264/426 kB | 58 kB | 33/100 kB   
+Progress (4): 187 kB | 268/426 kB | 58 kB | 33/100 kB
+Progress (4): 187 kB | 273/426 kB | 58 kB | 33/100 kB
+Progress (4): 187 kB | 277/426 kB | 58 kB | 33/100 kB
+Progress (4): 187 kB | 277/426 kB | 58 kB | 37/100 kB
+Progress (4): 187 kB | 277/426 kB | 58 kB | 41/100 kB
+Progress (4): 187 kB | 277/426 kB | 58 kB | 45/100 kB
+Progress (4): 187 kB | 277/426 kB | 58 kB | 49/100 kB
+Progress (4): 187 kB | 281/426 kB | 58 kB | 49/100 kB
+Progress (4): 187 kB | 285/426 kB | 58 kB | 49/100 kB
+Progress (4): 187 kB | 289/426 kB | 58 kB | 49/100 kB
+Progress (4): 187 kB | 293/426 kB | 58 kB | 49/100 kB
+                                                     
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar (187 kB at 742 kB/s)
+Progress (3): 297/426 kB | 58 kB | 49/100 kB
+Progress (3): 301/426 kB | 58 kB | 49/100 kB
+Progress (3): 305/426 kB | 58 kB | 49/100 kB
+Progress (3): 309/426 kB | 58 kB | 49/100 kB
+Progress (3): 309/426 kB | 58 kB | 53/100 kB
+Progress (3): 309/426 kB | 58 kB | 57/100 kB
+Progress (3): 309/426 kB | 58 kB | 61/100 kB
+Progress (3): 309/426 kB | 58 kB | 65/100 kB
+Progress (3): 313/426 kB | 58 kB | 65/100 kB
+Progress (3): 318/426 kB | 58 kB | 65/100 kB
+Progress (3): 322/426 kB | 58 kB | 65/100 kB
+Progress (3): 326/426 kB | 58 kB | 65/100 kB
+Progress (3): 326/426 kB | 58 kB | 69/100 kB
+Progress (3): 326/426 kB | 58 kB | 73/100 kB
+Progress (3): 326/426 kB | 58 kB | 77/100 kB
+Progress (3): 326/426 kB | 58 kB | 81/100 kB
+Progress (3): 326/426 kB | 58 kB | 85/100 kB
+Progress (3): 326/426 kB | 58 kB | 89/100 kB
+Progress (3): 326/426 kB | 58 kB | 93/100 kB
+Progress (3): 326/426 kB | 58 kB | 98/100 kB
+Progress (3): 326/426 kB | 58 kB | 100 kB   
+Progress (3): 330/426 kB | 58 kB | 100 kB
+Progress (3): 334/426 kB | 58 kB | 100 kB
+Progress (3): 338/426 kB | 58 kB | 100 kB
+Progress (3): 342/426 kB | 58 kB | 100 kB
+Progress (3): 346/426 kB | 58 kB | 100 kB
+Progress (3): 350/426 kB | 58 kB | 100 kB
+Progress (3): 354/426 kB | 58 kB | 100 kB
+Progress (3): 359/426 kB | 58 kB | 100 kB
+Progress (3): 363/426 kB | 58 kB | 100 kB
+Progress (3): 367/426 kB | 58 kB | 100 kB
+Progress (3): 371/426 kB | 58 kB | 100 kB
+Progress (3): 375/426 kB | 58 kB | 100 kB
+Progress (3): 379/426 kB | 58 kB | 100 kB
+Progress (3): 383/426 kB | 58 kB | 100 kB
+Progress (3): 387/426 kB | 58 kB | 100 kB
+Progress (3): 391/426 kB | 58 kB | 100 kB
+                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar (58 kB at 203 kB/s)
+Progress (2): 395/426 kB | 100 kB
+Progress (2): 400/426 kB | 100 kB
+Progress (2): 404/426 kB | 100 kB
+Progress (2): 408/426 kB | 100 kB
+Progress (2): 412/426 kB | 100 kB
+Progress (2): 416/426 kB | 100 kB
+Progress (2): 420/426 kB | 100 kB
+Progress (2): 424/426 kB | 100 kB
+Progress (2): 426 kB | 100 kB    
+                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar (100 kB at 325 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar (426 kB at 1.3 MB/s)
+[INFO] Building jar: C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\pvtfinal-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ pvtfinal ---
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+Progress (1): 2.8/11 kB
+Progress (1): 5.5/11 kB
+Progress (1): 8.3/11 kB
+Progress (1): 11/11 kB 
+Progress (1): 11 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 kB at 151 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+Progress (1): 2.2/42 kB
+Progress (1): 5.0/42 kB
+Progress (1): 7.8/42 kB
+Progress (1): 11/42 kB 
+Progress (1): 13/42 kB
+Progress (1): 16/42 kB
+Progress (1): 19/42 kB
+Progress (1): 21/42 kB
+Progress (1): 24/42 kB
+Progress (1): 27/42 kB
+Progress (1): 30/42 kB
+Progress (1): 32/42 kB
+Progress (1): 36/42 kB
+Progress (1): 40/42 kB
+Progress (1): 42 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 499 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+Progress (1): 4.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4.0 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+Progress (1): 2.2/233 kB
+Progress (1): 5.0/233 kB
+Progress (1): 7.7/233 kB
+Progress (1): 10/233 kB 
+Progress (1): 13/233 kB
+Progress (1): 16/233 kB
+Progress (1): 19/233 kB
+Progress (1): 21/233 kB
+Progress (2): 21/233 kB | 4.1/239 kB
+Progress (2): 21/233 kB | 7.7/239 kB
+Progress (2): 21/233 kB | 12/239 kB 
+Progress (2): 21/233 kB | 16/239 kB
+Progress (2): 24/233 kB | 16/239 kB
+Progress (2): 27/233 kB | 16/239 kB
+Progress (3): 27/233 kB | 16/239 kB | 4.1/155 kB
+Progress (3): 27/233 kB | 16/239 kB | 7.7/155 kB
+Progress (3): 30/233 kB | 16/239 kB | 7.7/155 kB
+Progress (3): 30/233 kB | 16/239 kB | 12/155 kB 
+Progress (3): 30/233 kB | 20/239 kB | 12/155 kB
+Progress (3): 30/233 kB | 20/239 kB | 16/155 kB
+Progress (3): 30/233 kB | 24/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 24/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 28/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 32/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 36/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 40/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 45/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 49/239 kB | 16/155 kB
+Progress (3): 32/233 kB | 49/239 kB | 20/155 kB
+Progress (3): 32/233 kB | 49/239 kB | 24/155 kB
+Progress (3): 32/233 kB | 49/239 kB | 28/155 kB
+Progress (3): 32/233 kB | 49/239 kB | 32/155 kB
+Progress (3): 36/233 kB | 49/239 kB | 32/155 kB
+Progress (3): 40/233 kB | 49/239 kB | 32/155 kB
+Progress (3): 45/233 kB | 49/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 49/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 53/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 57/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 61/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 65/239 kB | 32/155 kB
+Progress (3): 49/233 kB | 65/239 kB | 36/155 kB
+Progress (3): 49/233 kB | 65/239 kB | 40/155 kB
+Progress (3): 49/233 kB | 65/239 kB | 45/155 kB
+Progress (3): 49/233 kB | 65/239 kB | 49/155 kB
+Progress (3): 53/233 kB | 65/239 kB | 49/155 kB
+Progress (3): 57/233 kB | 65/239 kB | 49/155 kB
+Progress (3): 61/233 kB | 65/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 65/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 69/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 73/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 77/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 81/239 kB | 49/155 kB
+Progress (3): 65/233 kB | 81/239 kB | 53/155 kB
+Progress (3): 65/233 kB | 81/239 kB | 57/155 kB
+Progress (3): 65/233 kB | 81/239 kB | 61/155 kB
+Progress (3): 65/233 kB | 81/239 kB | 65/155 kB
+Progress (3): 69/233 kB | 81/239 kB | 65/155 kB
+Progress (3): 73/233 kB | 81/239 kB | 65/155 kB
+Progress (3): 77/233 kB | 81/239 kB | 65/155 kB
+Progress (3): 81/233 kB | 81/239 kB | 65/155 kB
+Progress (3): 81/233 kB | 85/239 kB | 65/155 kB
+Progress (3): 81/233 kB | 90/239 kB | 65/155 kB
+Progress (3): 81/233 kB | 94/239 kB | 65/155 kB
+Progress (3): 81/233 kB | 98/239 kB | 65/155 kB
+Progress (3): 85/233 kB | 98/239 kB | 65/155 kB
+Progress (3): 90/233 kB | 98/239 kB | 65/155 kB
+Progress (3): 94/233 kB | 98/239 kB | 65/155 kB
+Progress (3): 98/233 kB | 98/239 kB | 65/155 kB
+Progress (3): 98/233 kB | 98/239 kB | 69/155 kB
+Progress (3): 98/233 kB | 98/239 kB | 73/155 kB
+Progress (3): 98/233 kB | 98/239 kB | 77/155 kB
+Progress (3): 98/233 kB | 98/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 102/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 106/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 110/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 114/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 118/239 kB | 81/155 kB
+Progress (3): 98/233 kB | 118/239 kB | 85/155 kB
+Progress (3): 102/233 kB | 118/239 kB | 85/155 kB
+Progress (3): 102/233 kB | 118/239 kB | 90/155 kB
+Progress (3): 102/233 kB | 122/239 kB | 90/155 kB
+Progress (3): 102/233 kB | 122/239 kB | 94/155 kB
+Progress (3): 106/233 kB | 122/239 kB | 94/155 kB
+Progress (3): 106/233 kB | 122/239 kB | 98/155 kB
+Progress (3): 106/233 kB | 126/239 kB | 98/155 kB
+Progress (3): 110/233 kB | 126/239 kB | 98/155 kB
+Progress (3): 110/233 kB | 131/239 kB | 98/155 kB
+Progress (3): 114/233 kB | 131/239 kB | 98/155 kB
+Progress (3): 114/233 kB | 135/239 kB | 98/155 kB
+Progress (3): 114/233 kB | 139/239 kB | 98/155 kB
+Progress (3): 114/233 kB | 143/239 kB | 98/155 kB
+Progress (3): 114/233 kB | 147/239 kB | 98/155 kB
+Progress (3): 118/233 kB | 147/239 kB | 98/155 kB
+Progress (3): 122/233 kB | 147/239 kB | 98/155 kB
+Progress (3): 126/233 kB | 147/239 kB | 98/155 kB
+Progress (3): 131/233 kB | 147/239 kB | 98/155 kB
+Progress (3): 131/233 kB | 147/239 kB | 102/155 kB
+Progress (3): 131/233 kB | 147/239 kB | 106/155 kB
+Progress (3): 131/233 kB | 147/239 kB | 110/155 kB
+Progress (3): 131/233 kB | 147/239 kB | 114/155 kB
+Progress (3): 135/233 kB | 147/239 kB | 114/155 kB
+Progress (3): 139/233 kB | 147/239 kB | 114/155 kB
+Progress (3): 143/233 kB | 147/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 147/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 151/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 155/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 159/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 163/239 kB | 114/155 kB
+Progress (3): 147/233 kB | 163/239 kB | 118/155 kB
+Progress (3): 147/233 kB | 163/239 kB | 122/155 kB
+Progress (3): 147/233 kB | 163/239 kB | 126/155 kB
+Progress (3): 147/233 kB | 163/239 kB | 131/155 kB
+Progress (3): 147/233 kB | 167/239 kB | 131/155 kB
+Progress (3): 147/233 kB | 171/239 kB | 131/155 kB
+Progress (3): 147/233 kB | 176/239 kB | 131/155 kB
+Progress (3): 147/233 kB | 180/239 kB | 131/155 kB
+Progress (3): 151/233 kB | 180/239 kB | 131/155 kB
+Progress (3): 155/233 kB | 180/239 kB | 131/155 kB
+Progress (3): 159/233 kB | 180/239 kB | 131/155 kB
+Progress (3): 163/233 kB | 180/239 kB | 131/155 kB
+Progress (3): 163/233 kB | 180/239 kB | 135/155 kB
+Progress (3): 163/233 kB | 180/239 kB | 139/155 kB
+Progress (3): 163/233 kB | 180/239 kB | 143/155 kB
+Progress (3): 163/233 kB | 180/239 kB | 147/155 kB
+Progress (3): 163/233 kB | 184/239 kB | 147/155 kB
+Progress (3): 163/233 kB | 188/239 kB | 147/155 kB
+Progress (3): 163/233 kB | 192/239 kB | 147/155 kB
+Progress (3): 163/233 kB | 196/239 kB | 147/155 kB
+Progress (3): 167/233 kB | 196/239 kB | 147/155 kB
+Progress (3): 171/233 kB | 196/239 kB | 147/155 kB
+Progress (3): 176/233 kB | 196/239 kB | 147/155 kB
+Progress (3): 180/233 kB | 196/239 kB | 147/155 kB
+Progress (3): 180/233 kB | 196/239 kB | 151/155 kB
+Progress (3): 180/233 kB | 196/239 kB | 155/155 kB
+Progress (3): 180/233 kB | 196/239 kB | 155 kB    
+Progress (3): 180/233 kB | 200/239 kB | 155 kB
+Progress (3): 180/233 kB | 204/239 kB | 155 kB
+Progress (3): 180/233 kB | 208/239 kB | 155 kB
+Progress (3): 180/233 kB | 212/239 kB | 155 kB
+Progress (3): 184/233 kB | 212/239 kB | 155 kB
+Progress (3): 188/233 kB | 212/239 kB | 155 kB
+Progress (3): 192/233 kB | 212/239 kB | 155 kB
+Progress (3): 196/233 kB | 212/239 kB | 155 kB
+Progress (3): 196/233 kB | 217/239 kB | 155 kB
+Progress (3): 196/233 kB | 221/239 kB | 155 kB
+Progress (3): 196/233 kB | 225/239 kB | 155 kB
+Progress (3): 196/233 kB | 229/239 kB | 155 kB
+Progress (3): 200/233 kB | 229/239 kB | 155 kB
+Progress (3): 204/233 kB | 229/239 kB | 155 kB
+Progress (3): 208/233 kB | 229/239 kB | 155 kB
+Progress (3): 212/233 kB | 229/239 kB | 155 kB
+Progress (3): 212/233 kB | 233/239 kB | 155 kB
+Progress (3): 212/233 kB | 237/239 kB | 155 kB
+Progress (3): 212/233 kB | 239 kB | 155 kB    
+Progress (3): 217/233 kB | 239 kB | 155 kB
+Progress (3): 221/233 kB | 239 kB | 155 kB
+Progress (3): 225/233 kB | 239 kB | 155 kB
+Progress (3): 229/233 kB | 239 kB | 155 kB
+Progress (3): 233 kB | 239 kB | 155 kB    
+                                      
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (155 kB at 1.1 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (239 kB at 1.6 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (233 kB at 1.5 MB/s)
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\pvtfinal-1.0-SNAPSHOT.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\ru\mail\pvtfinal\1.0-SNAPSHOT\pvtfinal-1.0-SNAPSHOT.jar
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\ru\mail\pvtfinal\1.0-SNAPSHOT\pvtfinal-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:39 min
+[INFO] Finished at: 2018-12-11T01:21:49+03:00
+[INFO] ------------------------------------------------------------------------
+[PVT Final Project] $ cmd /c call C:\WINDOWS\TEMP\jenkins7997277326164995515.bat
+
+C:\Program Files (x86)\Jenkins\workspace\PVT Final Project>CD C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject 
+
+C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject>mvn site 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for ru.mail:pvtfinal:jar:1.0-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 139, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------------< ru.mail:pvtfinal >--------------------------
+[INFO] Building pvtfinal 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:site (default-site) @ pvtfinal ---
+[INFO] configuring report plugin io.qameta.allure:allure-maven:2.8
+[INFO] Relativizing decoration links with respect to project URL: http://www.example.com
+[INFO] Rendering site with org.apache.maven.skins:maven-default-skin:jar:1.0 skin.
+[INFO] Skipped "Allure" report, file "allure-maven.html" already exists for the English version.
+[INFO] Skipped "Allure" report, file "allure-maven.html" already exists for the English version.
+[INFO] Skipped "Allure" report, file "allure-maven.html" already exists for the English version.
+[INFO] Generating "Allure" report    --- allure-maven:2.8
+[INFO] Allure installation directory C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject/.allure
+[INFO] Try to finding out allure 2.0.1
+[INFO] Downloading allure commandline...
+[INFO] Proxy is not specified.
+[INFO] Downloading allure commandline complete
+[INFO] Generate Allure report (aggregate) with version 2.0.1
+[INFO] Generate Allure report to C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\site/allure-maven-plugin
+[INFO] Found results directory C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\allure-results
+[INFO] Can't find information about categories.
+[INFO] Generate report to C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\site\allure-maven-plugin
+Report successfully generated to C:\Program Files (x86)\Jenkins\workspace\PVT Final Project\finalProject\target\site\allure-maven-plugin
+[INFO] Report generated successfully.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.105 s
+[INFO] Finished at: 2018-12-11T01:21:56+03:00
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
