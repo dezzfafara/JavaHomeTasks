@@ -1,8 +1,6 @@
 package ru.mail.pages;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
@@ -121,7 +119,6 @@ public final class InboxPage extends Page {
 		binFolder.click();
 		wait.until(ExpectedConditions.invisibilityOfAllElements(notifications));
 		wait.until(ExpectedConditions.visibilityOf(selection)).click();
-		// new Robot().keyPress(KeyEvent.VK_V);
 		wait.until(ExpectedConditions.visibilityOf(moveTo)).click();
 		toInbox.click();
 	}
